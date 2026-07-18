@@ -4,9 +4,10 @@
 #  * *
 # * * * * * for n = 3
 
+n = int(input("Enter your number: "))
 
-n = int(input("Enter Your Number: "))
-
-for i in range(1, n+1):
-    print(" "*(n-i) + "*"*(2*i - 1))
-
+for i in range(1, n + 1):
+    if i == n:
+        print("*" * (2 * n - 1))
+    else:
+        print(" " * (n - i) + "* " * i)
